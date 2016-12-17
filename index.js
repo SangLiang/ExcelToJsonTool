@@ -63,9 +63,6 @@ function madeCityObj(provinceList) {
 function buildJson() {
     var provinceList = buildCityList();
     madeCityObj(provinceList);
-
-
-    console.log(provinceList);
 }
 
 function output() {
@@ -76,7 +73,7 @@ function output() {
     // //保存文件 
     rf.writeFile("result.json", m, function (err) {
         if (err) throw err;
-        console.log("File Saved !"); //文件被保存
+        console.log("转换完毕"); //文件被保存
     });
 }
 
