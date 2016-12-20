@@ -43,7 +43,7 @@ function output() {
 	//保存文件 
 	rf.writeFile("result2.json", m, function (err) {
 		if (err) throw err;
-		console.log("转换完毕"); //文件被保存
+		console.log("Transform Complete"); //文件被保存
 	});
 }
 
