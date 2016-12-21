@@ -24,6 +24,10 @@ function buildJson() {
 	for (var j = 0; j < dataList.length; j++) {
 		var _obj = {};
 
+		if(dataList[j].length<1){
+			continue;
+		}
+		
 		for (var i = 0; i < _length; i++) {
 			if (i == _length - 1) {
 				_obj[title[i]] = dataList[j].split(",")[i].split("\r")[0];
