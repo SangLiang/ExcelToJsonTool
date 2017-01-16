@@ -30,6 +30,10 @@ function buildJson() {
 		
 		for (var i = 0; i < _length; i++) {
 			if (i == _length - 1) {
+				// 验证对象是否为空
+				if(!dataList[j].split(",")[i]){
+					continue;
+				}
 				_obj[title[i]] = dataList[j].split(",")[i].split("\r")[0];
 			} else {
 				_obj[title[i]] = dataList[j].split(",")[i];
